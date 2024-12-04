@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Website Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="circle"></div>
+  <header>
+    <img src="image/logo.png" class="logo">
+    <ul>
+      <li><a href="https://www.starbucks.ph/menu" target="_blank" alt="MENU">MENU</a></li> 
+      <li><a href="https://www.starbucks.ph/menu" target="_blank" alt="MERCHANDISE">MERCHANDISE</a></li>
+      <li><a href="https://starbuckscard.ph/sbcard/" target="_blank" alt="REWARDS">REWARDS</a></li> 
+    </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <h2> <span> Starbucks</span> </h2>
+      <p>Discover what makes Starbucks unique from our commitment to human connection and quality coffee to our welcoming cafés and delicious products you can enjoy at home.</p>
+      <a href="https://www.starbucks.com/about-us/">Learn More</a> 
+    </div>
+    <div class="imgBox">
+      <img src="image/matcha.png" class="Starbucks" alt="Matcha Drink">
+    </div>
+
+    <ul class="thumb">
+      <li><a href="#" onclick="imgSlider('image/matcha.png'); changeCircleColor('#017143')"><img src="image/thumb1.png" alt="Matcha Thumbnail"></a></li>
+      <li><a href="#" onclick="imgSlider('image/latte.png'); changeCircleColor('#eb7495')"><img src="image/thumb2.png" alt="Latte Thumbnail"></a></li>
+      <li><a href="#" onclick="imgSlider('image/frappuccino latte.png'); changeCircleColor('#d752h1')"><img src="image/thumb3.png" alt="Frappuccino Thumbnail"></a></li>
+    </ul>
+
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/StarbucksPhilippines"><img src="image/facebook (1).png" alt="Facebook"></a></li>
+      <li><a href="https://www.instagram.com/starbucksph/"><img src="image/instagram.png" alt="Instagram"></a></li>
+      <li><a href="https://x.com/Starbucks"><img src="image/twitter.png" alt="Twitter"></a></li>
+    </ul>
+  </div>
+
+  <script>
+    function imgSlider(image) {
+      document.querySelector(".imgBox img").src = image;
+    }
+
+    function changeCircleColor(color) {
+      document.querySelector(".circle").style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
